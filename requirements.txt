@@ -1,0 +1,16 @@
+torchvision ~= ;
+matplotlib ~= ;
+streamlit ~= ;
+torch == ;
+pillow ~= ;
+scikit-image ~= ;
+albumentations ~= ;
+opencv-python ~= ;
+numpy ~= ;
+segmentation-models-pytorch == ;
+gdown ~= ;
+zipfile36 ~= ;
+seaborn ~= ;
+plotly ~= ;
+scipy ~= ;
+scikit-learn ~= ;
