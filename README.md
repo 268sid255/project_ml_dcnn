@@ -3,9 +3,9 @@
 
 ### Structure of this Repo (Структура репозитория)
 - [src](src) : main code
-- [app](app) : client (клиенская часть)
-- [yolact](yolact) : Yolact train
-- [yolo_seg](yolo_seg) : Yolo train
+- [app](src/app) : client (клиенская часть)
+- [yolact](src/yolact) : Yolact train
+- [yolo_seg](src/yolo_seg) : Yolo train
 
 ### Training YOLO (обучение с использование YOLO)
 #### Trains using the base args image size, epochs, batch_size (-1 run auto batch_size), iou, type_model_load (n,s,m,l or x, default load m)
