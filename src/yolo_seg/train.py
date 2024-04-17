@@ -62,7 +62,7 @@ if __name__ == '__main__':
     parser.add_argument('--name', type=str,
                         help='Имя обученной модели/Name training model')
     parser.add_argument('--iou', type=int, help='IoU')
-    parser.add_argument('--type_model_load', type=str,
+    parser.add_argument('--type_model_load', default='s', type=str,
                         help='Type Load Model (n,s,m,l or x)')
 
     args = parser.parse_args()
