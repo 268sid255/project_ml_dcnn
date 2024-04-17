@@ -157,4 +157,6 @@ images/test.jpg
 /src/yolact/weights
 weights/
 /src/yolo_seg/models
-/src/yolact
+src/yolact/data/yolact_example_0.png
+src/yolact/data/yolact_example_1.png
+src/yolact/data/yolact_example_2.png
