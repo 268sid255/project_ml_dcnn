@@ -156,8 +156,12 @@ datasets/
 other_files/
 src/yolo_seg/runs
 src/yolo_seg/models
+src/yolact/logs
+src/yolact/web
 
 images/test.jpg
 weights/best.pt
 weights/yolact_plus_resnet50_defect_74_100000.pt
 weights/yolact_plus_resnet50_defect_74_100000.pth
+
+*.pth
