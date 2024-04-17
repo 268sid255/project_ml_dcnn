@@ -1,10 +1,11 @@
-# Project on Samsung - Development of a methodology for identifying lumber defects in images using deep learning. 
-# (Проект на Самсунг - Разработка методики определения дефектов пиломатериалов на изображениях с использованием глубокого обучения)
+# Project on Samsung - Development of a methodology for identifying lumber defects in images using deep learning.  (Проект на Самсунг - Разработка методики определения дефектов пиломатериалов на изображениях с использованием глубокого обучения)
+
 
 ## Structure of this Repo (Структура репозитория)
 - [src](src) : main code
-
-## 
+- [app](app) : client (клиенская часть)
+- [yolact](yolact) : Yolact train
+- [yolo_seg](yolo_seg) : Yolo train
 
 ## Training YOLO (обучение с использование YOLO)
 ### Trains using the base args image size, epochs, batch_size (-1 run auto batch_size), iou, type_model_load (n,s,m,l or x, default load m)
