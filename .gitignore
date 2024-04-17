@@ -154,9 +154,7 @@ cython_debug/
 /datasets
 images/test.jpg
 /src/yolo_seg/runs
-/src/yolo_seg/runs
 /src/yolact/weights
 weights/
 /src/yolo_seg/models
-/src/yolact/data
 /src/yolact
