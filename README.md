@@ -1,4 +1,4 @@
-## Project on Samsung - Development of a methodology for identifying lumber defects in images using deep learning.\n(Проект на Самсунг - Разработка методики определения дефектов пиломатериалов на изображениях с использованием глубокого обучения)
+## Project on Samsung - Development of a methodology for identifying lumber defects in images using deep learning.<br/>(Проект на Самсунг - Разработка методики определения дефектов пиломатериалов на изображениях с использованием глубокого обучения)
 
 
 ### Structure of this Repo (Структура репозитория)
