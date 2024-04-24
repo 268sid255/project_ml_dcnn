@@ -26,7 +26,7 @@ def streamlit_app():
         "Change Confidence", 0, 100, 20)) / 100
     if model_type == "Yolov8":
         model_s = 0
-        model_path = Path(WEIGHTS_DIR / 'best.pt')
+        model_path = Path(WEIGHTS_DIR / 'best_iter2.pt')
     elif model_type == "Yolact":
         model_s = 0  # временно беру другую модель на выходных исправлю
         model_path = Path(

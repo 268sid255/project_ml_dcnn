@@ -1,7 +1,7 @@
 import PIL
 from constants import DEFAULT_IMAGE
 import streamlit as st
-from src.app.utils import sum_detections
+from src.app.utils import instance_detections
 from types import SimpleNamespace
 
 
@@ -67,7 +67,7 @@ class YOLODetector:
                         except Exception as ex:
                             st.write("An error occurred while procesing")
                     if boxes:
-                        sum_detections(
+                        instance_detections(
                             detected_objects_summary_list, self.model)
                 # elif self.model_type == 1:
                 #     detected_objects_summary_list = []

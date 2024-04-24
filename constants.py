@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve(strict=True).parent
 SRC_DIR = ROOT_DIR / 'src'
 WEIGHTS_DIR = ROOT_DIR / 'weights'
-DEFAULT_IMAGE = ROOT_DIR / 'images'
+DEFAULT_IMAGE = ROOT_DIR / 'images' / 'test.jpg'
 DATA_DIR = ROOT_DIR / 'data' / 'dataset_yolo'
 
 

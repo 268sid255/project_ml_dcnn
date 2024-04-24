@@ -1,13 +1,16 @@
+from argparse import ArgumentParser
+from urls import DATA_DIR, MODEL_YAML_N, MODEL_YAML_S, MODEL_YAML_M, MODEL_YAML_X, MODEL_YAML_L, MODEL_SEG_N, MODEL_SEG_S, MODEL_SEG_M, MODEL_SEG_L, MODEL_SEG_X
 from ultralytics import YOLO
 import cv2
 import numpy as np
-from constants import DATA_DIR, MODEL_YAML_N, MODEL_YAML_S, MODEL_YAML_M, MODEL_YAML_X, MODEL_YAML_L, MODEL_SEG_N, MODEL_SEG_S, MODEL_SEG_M, MODEL_SEG_L, MODEL_SEG_X
-from argparse import ArgumentParser
+import os
+import sys
+sys.path.append(os.getcwd())
 
 
 def train_the_model(imgsz, epochs, batch_size, name, iou, type_pretrain_model):
-
-    model_yaml, model_seg = ''
+    model_yaml = ''
+    model_seg = ''
     if type_pretrain_model == 'n':
         model_yaml = MODEL_YAML_N
         model_seg = MODEL_SEG_N
@@ -39,7 +42,7 @@ def train_the_model(imgsz, epochs, batch_size, name, iou, type_pretrain_model):
             'batch': batch_size,
             'name': name,
             'iou': iou,
-            'pretrained': True,
+            # 'pretrained': True,
             'save': True,
             'overlap_mask': True
         }
@@ -54,14 +57,14 @@ def train_the_model(imgsz, epochs, batch_size, name, iou, type_pretrain_model):
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument(
-        '--imgsz', type=str, help='Размер изображения для обучения/Size image for train')
+        '--imgsz', type=int, help='Размер изображения для обучения/Size image for train')
     parser.add_argument('--epochs', type=int,
                         help='Кол-во эпох обучения/Count epochs for train')
     parser.add_argument('--batch_size', type=int,
                         help='Размер пакета обучения/Size batch')
     parser.add_argument('--name', type=str,
                         help='Имя обученной модели/Name training model')
-    parser.add_argument('--iou', type=int, help='IoU')
+    parser.add_argument('--iou', type=float, help='IoU')
     parser.add_argument('--type_model_load', default='s', type=str,
                         help='Type Load Model (n,s,m,l or x)')
 
